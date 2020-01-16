@@ -1,0 +1,12 @@
+{% extends 'base1.html' %}
+{% block content %}
+<div style="padding:100px;">
+<h3>Upload your training file here to perfrom classification</h3>
+<p>Only .csv files will be accepted</p>
+<form method="post" action="{% url 'rowcol' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="file" accept=".csv">
+    <button type="submit">Upload File</button>
+</form>
+</div>
+{% endblock %}

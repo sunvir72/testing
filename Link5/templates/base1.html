@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Red Hat Text' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Red Hat Text';font-size: 17px;
+	
+}
+</style>
+<style>
+body  {
+  background-image: url("{% static "img/hh5.jpg" %}");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+<body>
+<center>
+<h1 style="color:#195967;background-color:white;padding:15px;">MACHINE LEARNIG PROJECT</h1></center>
+<div class="footer">
+  <p>Made by Sunvir</p>
+</div>
+{% endif %}
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
+{% endif %}
